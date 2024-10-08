@@ -186,6 +186,11 @@
             margin-bottom: -1px;
             margin-right: -1px;
         }
+        .el-dialog__wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 
@@ -260,7 +265,7 @@
                 </div>
 
             </div>
-            <el-dialog title="提示" :visible.sync="dialogVisible" width="40%" :close-on-click-modal="false">
+            <el-dialog title="提示" :visible.sync="dialogVisible" width="40%" :close-on-click-modal="false" top="0">
                 <span>{{result}}</span>
                 <span slot="footer" class="dialog-footer">
                     <el-button type="primary" @click="copyUrl(result)" size="small">复制</el-button>
@@ -268,7 +273,7 @@
                 </span>
             </el-dialog>
         </div>
-        <a class="link-github" href="https://github.com/move132" target="_blank">
+        <a class="link-github" href="https://github.com/gkingt/Url-Shorten-Worker" target="_blank">
             <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true"
                 class="octicon octicon-mark-github v-align-middle">
                 <path fill-rule="evenodd"
