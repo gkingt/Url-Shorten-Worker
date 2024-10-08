@@ -191,6 +191,9 @@
             justify-content: center;
             align-items: center;
         }
+        .el-dialog__body{
+            margin:0 30px;
+        }
     </style>
 </head>
 
@@ -265,7 +268,7 @@
                 </div>
 
             </div>
-            <el-dialog title="提示" :visible.sync="dialogVisible" width="40%" :close-on-click-modal="false" top="0">
+            <el-dialog title="提示" :visible.sync="dialogVisible" width="auto"  :close-on-click-modal="false" top="0">
                 <span>{{result}}</span>
                 <span slot="footer" class="dialog-footer">
                     <el-button type="primary" @click="copyUrl(result)" size="small">复制</el-button>
