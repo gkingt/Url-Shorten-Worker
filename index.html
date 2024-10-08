@@ -22,6 +22,12 @@
             padding: 0;
             cursor: default;
         }
+        #app{
+            height: 100vh;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
 
         .cover {
             max-width: 600px;
@@ -254,7 +260,7 @@
                 </div>
 
             </div>
-            <el-dialog title="提示" :visible.sync="dialogVisible" width="85%" :close-on-click-modal="false">
+            <el-dialog title="提示" :visible.sync="dialogVisible" width="40%" :close-on-click-modal="false">
                 <span>{{result}}</span>
                 <span slot="footer" class="dialog-footer">
                     <el-button type="primary" @click="copyUrl(result)" size="small">复制</el-button>
